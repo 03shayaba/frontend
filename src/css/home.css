@@ -1,0 +1,17 @@
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+    background: linear-gradient(to right, rgb(81, 129, 183),rgb(5, 150, 186));
+}
+
+.User{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    line-height: 0.5;
+    color: darkgreen;
+}
