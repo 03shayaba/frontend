@@ -9,7 +9,9 @@ import Parent from './Components/Parent';
 import Button from'./Components/Button';
 import {useState} from 'react';
 import Card from './Components/Card';
-import Pannel from './Components/Pannel';
+// import Pannel from './Components/Pannel';
+
+import Hello from './Components/Hello';
 
 function App() {
   const [Count , setCount] = useState(0);
@@ -29,7 +31,8 @@ function App() {
         {/* <Route path='/parent'   element={<Parent />  }/> */}
 
         {/* props.children route passing to the button component */}
-        <Route  path='/button' element ={<Button  HandleClick={handleClick} text="click Me">
+        <Route  path='/button' element ={<Button  
+        HandleClick={handleClick} text="click Me">
           <h1>{Count}</h1>
         </Button> }/>
         </Routes>
@@ -38,12 +41,14 @@ function App() {
         <p>I am inside parent :{name}</p>
 
         {/* panel */}
-        <Pannel title="About">
+        {/* <Pannel title="About">
           With a population of about 2 million, Almaty is Kazakhstan's largest city. From 1929 to 1997, it was its capital city.
         </Pannel>
         <Pannel title="Etymology">
            The name comes from <span lang="kk-KZ">алма</span>, the Kazakh word for "apple" and is often translated as "full of apples". In fact, the region surrounding Almaty is thought to be the ancestral home of the apple, and the wild <i lang="la">Malus sieversii</i> is considered a likely candidate for the ancestor of the modern domestic apple.
-        </Pannel>
+        </Pannel> */}
+
+        <Hello />
       </BrowserRouter>
     </div>
   );
